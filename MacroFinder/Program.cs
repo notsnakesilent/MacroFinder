@@ -26,10 +26,27 @@ namespace MacroFinder
 
             if (File.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/config.cuecfg"))
             {
-                Console.WriteLine("Corsair mouse detected , Config file Modified at: " + File.GetLastWriteTime(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/config.cuecfg"));
+                Console.WriteLine("Corsair (CUE) mouse detected , Config file Modified at: " + File.GetLastWriteTime(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/config.cuecfg"));
                 Console.WriteLine("");
             }
 
+            if (File.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/config.cuecfg"))
+            {
+                Console.WriteLine("Corsair (CUE4) mouse detected , Config file Modified at: " + File.GetLastWriteTime(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/config.cuecfg"));
+                Console.WriteLine("");
+            }
+            
+            if (Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/Profiles"))
+            {
+                Console.WriteLine("Corsair (CUE4) mouse detected , Config folder Modified at: " + Directory.GetLastWriteTime(Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/Profiles"));
+                Console.WriteLine("");
+            }
+                                  
+            if (Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/Profiles"))
+            {
+                Console.WriteLine("Corsair (CUE) mouse detected , Config folder Modified at: " + Directory.GetLastWriteTime(Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/Profiles"));
+                Console.WriteLine("");
+            }
             if (File.Exists(Environment.SpecialFolder.ProgramFilesX86 + "/Bloody7/Bloody7/UserLog/Mouse/TLcir_9EFF3FF4/language/Settings/EnvironmentVar.ini"))
             {
                 Console.WriteLine("Bloody mouse detected , Config file Modified at: " + File.GetLastWriteTime(Environment.SpecialFolder.ProgramFilesX86 + "/Bloody7/Bloody7/UserLog/Mouse/TLcir_9EFF3FF4/language/Settings/EnvironmentVar.ini"));
