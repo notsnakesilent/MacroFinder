@@ -38,13 +38,13 @@ namespace MacroFinder
             
             if (Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/Profiles"))
             {
-                Console.WriteLine("Corsair (CUE4) mouse detected , Config folder Modified at: " + Directory.GetLastWriteTime(Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/Profiles"));
+                Console.WriteLine("Corsair (CUE4) mouse detected , Config folder Modified at: " + Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE4/Profiles"));
                 Console.WriteLine("");
             }
                                   
             if (Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/Profiles"))
             {
-                Console.WriteLine("Corsair (CUE) mouse detected , Config folder Modified at: " + Directory.GetLastWriteTime(Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/Profiles"));
+                Console.WriteLine("Corsair (CUE) mouse detected , Config folder Modified at: " + Directory.Exists(Environment.SpecialFolder.ApplicationData + "/corsair/CUE/Profiles"));
                 Console.WriteLine("");
             }
             if (File.Exists(Environment.SpecialFolder.ProgramFilesX86 + "/Bloody7/Bloody7/UserLog/Mouse/TLcir_9EFF3FF4/language/Settings/EnvironmentVar.ini"))
